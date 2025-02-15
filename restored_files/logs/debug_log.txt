@@ -1,0 +1,33 @@
+[INFO] 2016-02-11 15:38:31 - request_manager: Sending POST request to URL http://192.168.99.100/sigint/api/auth/signup
+[INFO] 2016-02-11 15:38:31 - connectionpool: Starting new HTTP connection (1): 192.168.99.100
+[DEBUG] 2016-02-11 15:38:31 - connectionpool: "POST /sigint/api/auth/signup HTTP/1.1" 200 87
+[INFO] 2016-02-11 15:38:31 - request_manager: Got response on request: <Response [200]>
+[INFO] 2016-02-11 15:38:31 - environment: Starting verifying feature Users can manage records based on permissions and workflow rules
+[INFO] 2016-02-11 15:38:31 - environment: Starting step I signed in as "admin" user
+[INFO] 2016-02-11 15:38:31 - request_manager: Sending PUT request to URL http://192.168.99.100/sigint/api/admin/user/add
+[INFO] 2016-02-11 15:38:31 - connectionpool: Starting new HTTP connection (1): 192.168.99.100
+[DEBUG] 2016-02-11 15:38:31 - connectionpool: "PUT /sigint/api/admin/user/add HTTP/1.1" 200 262
+[INFO] 2016-02-11 15:38:31 - request_manager: Got response on request: <Response [200]>
+[INFO] 2016-02-11 15:38:31 - request_manager: Sending POST request to URL http://192.168.99.100/sigint/api/auth/login
+[INFO] 2016-02-11 15:38:31 - connectionpool: Starting new HTTP connection (1): 192.168.99.100
+[DEBUG] 2016-02-11 15:38:31 - connectionpool: "POST /sigint/api/auth/login HTTP/1.1" 200 87
+[INFO] 2016-02-11 15:38:31 - request_manager: Got response on request: <Response [200]>
+[INFO] 2016-02-11 15:38:31 - environment: Finishing step I signed in as "admin" user
+[INFO] 2016-02-11 15:38:31 - environment: Starting step I create new manual record with default values
+[INFO] 2016-02-11 15:38:31 - request_manager: Sending GET request to URL http://192.168.99.100/sigint/api/sources
+[INFO] 2016-02-11 15:38:31 - connectionpool: Starting new HTTP connection (1): 192.168.99.100
+[DEBUG] 2016-02-11 15:38:31 - connectionpool: "GET /sigint/api/sources HTTP/1.1" 200 558
+[INFO] 2016-02-11 15:38:31 - request_manager: Got response on request: <Response [200]>
+[INFO] 2016-02-11 15:38:31 - request_manager: Sending POST request to URL http://192.168.99.100/sigint/api/record/manual
+[INFO] 2016-02-11 15:38:31 - connectionpool: Starting new HTTP connection (1): 192.168.99.100
+[DEBUG] 2016-02-11 15:38:31 - connectionpool: "POST /sigint/api/record/manual HTTP/1.1" 200 320
+[INFO] 2016-02-11 15:38:31 - request_manager: Got response on request: <Response [200]>
+[INFO] 2016-02-11 15:38:31 - environment: Finishing step I create new manual record with default values
+[INFO] 2016-02-11 15:38:31 - environment: Starting step I expect response code "200"
+[INFO] 2016-02-11 15:38:31 - environment: Finishing step I expect response code "200"
+[INFO] 2016-02-11 15:38:31 - environment: Starting step Record is created
+[INFO] 2016-02-11 15:38:31 - records_steps: Request was sent successfully. Parsing results...
+[INFO] 2016-02-11 15:38:31 - records_steps: Record was created successfully
+[INFO] 2016-02-11 15:38:31 - environment: Finishing step Record is created
+[INFO] 2016-02-11 15:38:31 - environment: Finished verifying feature Users can manage records based on permissions and workflow rules
+[INFO] 2016-02-11 15:38:31 - environment: Deleting all created during session user accounts

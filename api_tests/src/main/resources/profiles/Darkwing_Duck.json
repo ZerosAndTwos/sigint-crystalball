@@ -1,0 +1,73 @@
+{
+  "name": "Darkwing Duck, Drake Mallard",
+  "properties": {
+    "description": "Darkwing Duck / Drake Mallard (voiced by Jim Cummings) is an average citizen by day and St. Canard's resident superhero and partly the leader of the Friendly Five by night.[1] He possesses a mix of courageous altruism and gigantic arrogance and ego – two drives that constantly clash during his adventures. For example, in the first part of the episode \"Just Us Justice Ducks\", he is initially mortified that he would be getting help against the Fearsome Five.[2] Darkwing's origins are rather fuzzy. During his childhood and teenage years, Drake was a complete dork,[3][4] but by his high school days, he had already developed an obsession with crime-fighting.[4] However, he frequently claims to have become a superhero on the day he became Darkwing Duck after his teenage years. He has been an active superhero for an unknown number of years. In his earliest days of crime fighting, he was more focused on the headlines from his career, to the extent that in the second part of the pilot episode \"Darkly Dawns the Duck\" he laments that he has no life outside his showboating and no friends to turn to.[5] Launchpad McQuack and Gosalyn give him a life and help keep him grounded.[5] Her importance to him is shown in \"Time and Punishment\", where losing Gosalyn causes him to develop a maniacal zeal about crime-fighting and to devolve into a ruthless dictator in name of the law and order.[6] His two recurring catchphrases are \"I am the terror that flaps in the night\" (followed by an improvised metaphor before he gives his name), and the battle cry of \"let's get dangerous\".\nhttps://en.wikipedia.org/wiki/List_of_Darkwing_Duck_characters"
+  },
+  "groups": [],
+  "identifiers": [
+    {
+      "name": "DarkwingDuck@gmail.com",
+      "properties": {},
+      "type": "EMAIL_ADDRESS",
+      "value": "DarkwingDuck@gmail.com",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    },
+    {
+      "name": "375292223322",
+      "properties": {},
+      "type": "PHONE_NUMBER",
+      "value": "375292223322",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    },
+    {
+      "name": "12345556667778",
+      "properties": {},
+      "type": "IMEI",
+      "value": "12345556667778",
+      "sources": ["H"],
+      "validationStatus": "NOT_APPLICABLE",
+      "jsonType": "Identifier"
+    },
+    {
+      "name": "34357546667778",
+      "properties": {},
+      "type": "IMSI",
+      "value": "34357546667778",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    }
+  ],
+  "consolidatedAttributes": {
+    "image": [],
+    "gender": [],
+    "nationality": [],
+    "document": [],
+    "name": [],
+    "dateOfBirth": []
+  },
+  "active": "ACTIVE",
+  "activeUntil": null,
+  "entityCount": 0,
+  "category": "Person of Interest",
+  "threatLikelihood": 20,
+  "threatImpact": 20,
+  "criminalRecord": "CLEAN",
+  "reqPermissions":[{"actionPermission":null,"classification":"TS","dataSources":null,"orgUnit":null}],
+  "rfis": null,
+  "voiceModelId": null,
+  "voiceFiles": [],
+  "uploadedImage": null,
+  "target": true,
+  "historicalQueryTime": null,
+  "lastLocation": null,
+  "voiceID": false,
+  "threatScore": 40,
+  "jsonType": "Profile",
+  "images": [],
+  "type": "Individual"
+}

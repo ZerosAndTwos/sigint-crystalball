@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <!--Special steps-->
+    <bean id="basicSteps" class="ae.pegasus.framework.steps.BasicSteps" />
+    <bean id="uiSteps" class="ae.pegasus.framework.steps.UISteps" />
+    <bean id="loginSteps" class="ae.pegasus.framework.steps.UISignInSteps" />
+    <bean id="mainPageSteps" class="ae.pegasus.framework.steps.UIMainPageSteps" />
+    <bean id="navigationSteps" class="ae.pegasus.framework.steps.UINavigationSteps" />
+    <bean id="actionsWithSelectedSteps" class="ae.pegasus.framework.steps.special.UIActionsWithSelectedSteps" />
+    <!--Search pages steps-->
+    <bean id="basicSearchSteps" class="ae.pegasus.framework.steps.search.UISearchSteps" />
+    <bean id="geoSearchSteps" class="ae.pegasus.framework.steps.search.UIGeoSearchSteps" />
+    <bean id="advancedSearchSteps" class="ae.pegasus.framework.steps.search.UIAdvancedSearchSteps" />
+    <bean id="savedSearchesSteps" class="ae.pegasus.framework.steps.search.UISavedSearchesSteps" />
+    <!--Profiler page steps-->
+    <bean id="createTargetSteps" class="ae.pegasus.framework.steps.profiler.UICreateTargetSteps" />
+    <bean id="profilerBasicSteps" class="ae.pegasus.framework.steps.profiler.UIProfilerBasicSteps" />
+    <bean id="checkProfilerSummaryTabSteps" class="ae.pegasus.framework.steps.profiler.UICheckProfilerSummaryTabSteps" />
+    <bean id="checkProfilerDetailsTabSteps" class="ae.pegasus.framework.steps.profiler.UICheckProfilerDetailsTabSteps" />
+    <bean id="checkProfilerCommunicationTabSteps" class="ae.pegasus.framework.steps.profiler.UICheckProfilerCommunicationTabSteps" />
+    <bean id="checkProfilerTravelMovementTab" class="ae.pegasus.framework.steps.profiler.UICheckProfilerTravelAndMovementTabSteps" />
+    <bean id="checkProfilerInsightsBetaTab" class="ae.pegasus.framework.steps.profiler.UICheckProfilerInsightsBetaTabSteps" />
+    <bean id="CheckProfilerOpenDataTabSteps" class="ae.pegasus.framework.steps.profiler.UICheckProfilerOpenDataTabSteps" />
+
+    <!--CB Finder steps-->
+    <bean id="cbFinderSteps" class="ae.pegasus.framework.steps.cbfinder.UICBFinderSteps" />
+    <bean id="cbFinderFileSteps" class="ae.pegasus.framework.steps.cbfinder.UICBFinderFileSteps" />
+    <bean id="cbFinderCaseSteps" class="ae.pegasus.framework.steps.cbfinder.UICBFinderCaseSteps" />
+    <!--Record Assessment-->
+    <bean id="myRecordsSteps" class="ae.pegasus.framework.steps.record_assessment.UIMyRecordsSteps" />
+    <bean id="teamRecordsSteps" class="ae.pegasus.framework.steps.record_assessment.UITeamRecordsSteps" />
+    <!--Create Records-->
+    <bean id="createManualRecord" class="ae.pegasus.framework.steps.special.create_event_record.UICreateManualRecordSteps" />
+    <!--Other pages steps-->
+    <bean id="createSavedSearchSteps" class="ae.pegasus.framework.steps.special.saved_searches.UICreateSavedSearchSteps" />
+    <bean id="editSavedSearchSteps" class="ae.pegasus.framework.steps.special.saved_searches.UIEditSavedSearchSteps" />
+    <bean id="searchAuthorizationSteps" class="ae.pegasus.framework.steps.UISearchAuthorizationSteps" />
+    <bean id="searchQueuesSteps" class="ae.pegasus.framework.steps.special.queues.UISearchQueuesSteps" />
+    <bean id="alertHistorySteps" class="ae.pegasus.framework.steps.special.alert_history.UIAlertHistorySteps" />
+    <!--Operator report steps-->
+    <bean id="updateOperatorReportSteps" class="ae.pegasus.framework.steps.special.IM_requests.operator_report.UIUpdateOperatorReportSteps" />
+    <bean id="verifyOperatorReportFieldsSteps" class="ae.pegasus.framework.steps.special.IM_requests.operator_report.UIVerifyOperatorReportFieldsSteps" />
+    <bean id="verifyOperatorReportButtonsSteps" class="ae.pegasus.framework.steps.special.IM_requests.operator_report.UIVerifyOperatorReportButtonsSteps" />
+
+
+    <!--Operator report steps-->
+    <bean id="updateMasterReportSteps" class="ae.pegasus.framework.steps.special.IM_requests.master_report.UIUpdateMasterReportSteps" />
+    <bean id="verifyMasterReportFieldsSteps" class="ae.pegasus.framework.steps.special.IM_requests.master_report.UIVerifyMasterReportFieldsSteps" />
+    <bean id="verifyMasterReportButtonsSteps" class="ae.pegasus.framework.steps.special.IM_requests.master_report.UIVerifyMasterReportButtonsSteps" />
+
+    <!--Request for information (RFI) steps-->
+    <bean id="requestForInformationActionsSteps" class="ae.pegasus.framework.steps.special.IM_requests.request_for_information.UIRequestForInformationActionsSteps" />
+    <bean id="updateRequestForInformationSteps" class="ae.pegasus.framework.steps.special.IM_requests.request_for_information.UIUpdateRequestForInformationSteps" />
+    <bean id="verifyRequestForInformationFieldsSteps" class="ae.pegasus.framework.steps.special.IM_requests.request_for_information.UIVerifyRequestForInformationFieldsSteps" />
+    <!--Search filter set-up steps-->
+    <bean id="searchFilterSetupSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterSetupSteps" />
+    <bean id="searchFilterAdditionalSetupSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterAdditionalSetupSteps" />
+    <bean id="searchFilterMatchTypeSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterMatchTypeSteps" />
+    <bean id="searchFilterObjectTypeSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterObjectTypeSteps" />
+    <bean id="searchFilterSourceTypeSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterSourceTypeSteps" />
+    <bean id="searchFilterPrioritySteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterPrioritySteps" />
+    <bean id="searchFilterRecordStatusSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterRecordStatusSteps" />
+    <bean id="searchFilterEventTimeSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterEventTimeSteps" />
+    <bean id="searchFilterTabSelectionSteps" class="ae.pegasus.framework.steps.special.search_filter.UISearchFilterTabSelectionSteps" />
+
+    <!--Search results steps-->
+    <bean id="searchResultsBasicSteps" class="ae.pegasus.framework.steps.special.search_result.UIBasicSearchResultsSteps" />
+    <bean id="verifyResultsNumberSteps" class="ae.pegasus.framework.steps.special.search_result.verify_view.UIVerifyResultsNumberSteps" />
+    <bean id="verifyResultsScrollAbilitySteps" class="ae.pegasus.framework.steps.special.search_result.verify_view.UIVerifyResultsScrollAbilitySteps" />
+    <bean id="searchResultsSelectCardsSteps" class="ae.pegasus.framework.steps.special.search_result.UISelectCardsSteps" />
+    <bean id="searchResultsCardsActionsSteps" class="ae.pegasus.framework.steps.special.search_result.UICardsActionsSteps" />
+    <bean id="searchResultDetailsTranslationSteps" class="ae.pegasus.framework.steps.special.search_result.details.UISearchResultDetailsTranslationSteps" />
+    <bean id="searchResultDetailsCheckFieldsSteps" class="ae.pegasus.framework.steps.special.search_result.details.UISearchResultsDetailsCheckFieldsSteps" />
+    <!--FIXME Steps to be removed-->
+    <bean id="TempSteps" class="ae.pegasus.framework.steps.TempStep" />
+</beans>

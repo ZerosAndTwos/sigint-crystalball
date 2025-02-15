@@ -1,0 +1,73 @@
+{
+  "name": "adubatovka",
+  "properties": {
+    "description": "Test target, please don't touch"
+  },
+  "groups": [],
+  "identifiers": [
+    {
+      "id": "f344510c-929e-4a79-be4a-f31327e53671",
+      "name": "tower83@gmail.com",
+      "properties": {},
+      "type": "EMAIL_ADDRESS",
+      "value": "tower83@gmail.com",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    },
+    {
+      "id": "4cd4b60d-ccf2-4138-8bf4-ce565841ffcd",
+      "name": "375297623450",
+      "properties": {},
+      "type": "PHONE_NUMBER",
+      "value": "375297623450",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    },
+    {
+      "id": "6ee3cba3-7087-48e0-a262-2449b86c4090",
+      "name": "12367418234412",
+      "properties": {},
+      "type": "IMEI",
+      "value": "12367418234412",
+      "sources": ["H"],
+      "validationStatus": "NOT_APPLICABLE",
+      "jsonType": "Identifier"
+    },
+    {
+      "id": "3f078699-20ae-4023-ba85-fe54c0950151",
+      "name": "34257625234123",
+      "properties": {},
+      "type": "IMSI",
+      "value": "34257625234123",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    }
+  ],
+  "consolidatedAttributes": {
+    "image": [],
+    "gender": [],
+    "nationality": [],
+    "document": [],
+    "name": [],
+    "dateOfBirth": []
+  },
+  "active": "ACTIVE",
+  "activeUntil": null,
+  "entityCount": 4,
+  "category": "Person of Interest",
+  "threatLikelihood": 20,
+  "threatImpact": 20,
+  "criminalRecord": "CLEAN",
+  "reqPermissions":[{"actionPermission":null,"classification":"TS","dataSources":null,"orgUnit":null}],
+  "rfis": [],
+  "voiceModelId": null,
+  "voiceFiles": [],
+  "uploadedImage": null,
+  "target": true,
+  "jsonType": "Profile",
+  "images": [],
+  "type": "Individual"
+}

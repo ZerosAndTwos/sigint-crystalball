@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ae.pegasus.qatools</groupId>
+    <artifactId>cb-automation</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+        <module>common</module>
+        <module>verification-engine</module>
+    </modules>
+    <name>JBehave Stories</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <framework.version>1.5.6</framework.version>
+        <jbehave.core.version>4.3.5</jbehave.core.version>
+        <jersey.version>2.25</jersey.version>
+        <log4j.version>1.2.17</log4j.version>
+        <poi.version>3.17</poi.version>
+        <selenide.version>4.11.1</selenide.version>
+        <webdrivermanager.version>2.2.1</webdrivermanager.version>
+        <math3.version>3.6.1</math3.version>
+        <phone.codes.version>8.9.13</phone.codes.version>
+        <!--Stories related-->
+        <stories>**/*Launcher.java</stories>
+        <metaFilters>-deprecated -skip -wip -nightly -notstage</metaFilters>
+        <!--Framework set-up-->
+        <remoteRun>false</remoteRun>
+        <browser>chrome</browser>
+        <appURL>http://cb-test2.pegasus.ae</appURL>
+        <seleniumHub>0.0.0.0</seleniumHub>
+        <searchIndex.updatePeriod.ms>15000</searchIndex.updatePeriod.ms>
+        <!--<timeZoneId>GMT+4</timeZoneId>-->
+        <timeout.long.ms>180000</timeout.long.ms>
+        <suppressKnownIssues>true</suppressKnownIssues>
+        <!-- plugins -->
+        <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+        <maven.assembly.plugin.version>3.1.0</maven.assembly.plugin.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>api</id>
+            <modules>
+                <module>api_tests</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>ui</id>
+            <modules>
+                <module>ui_tests</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>ae.pegasus.qatools</groupId>
+            <artifactId>jbehave-framework</artifactId>
+            <version>${framework.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jbehave</groupId>
+                <artifactId>jbehave-maven-plugin</artifactId>
+                <version>${jbehave.core.version}</version>
+                <executions>
+                    <execution>
+                        <id>unpack-view-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>unpack-view-resources</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>embeddable-stories</id>
+                        <phase>integration-test</phase>
+                        <configuration>
+                            <includes>
+                                <include>${stories}</include>
+                            </includes>
+                            <excludes/>
+                            <ignoreFailureInStories>true</ignoreFailureInStories>
+                            <ignoreFailureInView>false</ignoreFailureInView>
+                            <storyTimeouts>5000</storyTimeouts>
+                            <threads>1</threads>
+                            <metaFilters>
+                                <metaFilter>${metaFilters}</metaFilter>
+                            </metaFilters>
+                        </configuration>
+                        <goals>
+                            <goal>run-stories-as-embeddables</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <resultsDirectory>../allure-results</resultsDirectory>
+                    <reportVersion>2.7.0</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>pegasus-releases</id>
+            <name>Pegasus Releases</name>
+            <url>https://artifactory.pegasus.ae/artifactory/pegasus-releases</url>
+        </repository>
+        <repository>
+            <id>pegasus-snapshots</id>
+            <name>Pegasus Snapshots</name>
+            <url>https://artifactory.pegasus.ae/artifactory/pegasus-snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <bean id="basicSteps" class="ae.pegasus.framework.steps.BasicSteps" >
+    </bean>
+    <bean id="loginSteps" class="ae.pegasus.framework.steps.APILoginSteps">
+    </bean>
+    <bean id="apiLoginController" class="ae.pegasus.framework.controllers.APILogin">
+    </bean>
+    <bean id="targetGroupSteps" class="ae.pegasus.framework.steps.APITargetGroupSteps">
+    </bean>
+    <bean id="userRoleSteps" class="ae.pegasus.framework.steps.APIRoleSteps">
+    </bean>
+    <bean id="userGroupSteps" class="ae.pegasus.framework.steps.APIUserGroupSteps">
+    </bean>
+    <bean id="userSteps" class="ae.pegasus.framework.steps.APIUserSteps">
+    </bean>
+    <bean id="recordSteps" class="ae.pegasus.framework.steps.APIRecordSteps">
+    </bean>
+    <bean id="reportSteps" class="ae.pegasus.framework.steps.APIReportSteps">
+    </bean>
+    <bean id="sourceSteps" class="ae.pegasus.framework.steps.APISourceSteps">
+    </bean>
+    <bean id="ingestionSteps" class="ae.pegasus.framework.steps.APIIngestionSteps">
+    </bean>
+    <bean id="uploadFilesSteps" class="ae.pegasus.framework.steps.APIUploadFilesSteps">
+    </bean>
+    <bean id="searchFilesAndFolders" class="ae.pegasus.framework.steps.APISearchFilesAndFoldersSteps">
+    </bean>
+    <bean id="designationSteps" class="ae.pegasus.framework.steps.APIDesignationsSteps">
+    </bean>
+    <bean id="designationMappingSteps" class="ae.pegasus.framework.steps.APIDesignationMappingsSteps">
+    </bean>
+    <bean id="reportCategorySteps" class="ae.pegasus.framework.steps.APIReportCategorySteps">
+    </bean>
+    <bean id="profileSteps" class="ae.pegasus.framework.steps.APIProfileSteps">
+    </bean>
+    <bean id="recordsSearchSteps" class="ae.pegasus.framework.steps.APISearchSteps">
+    </bean>
+    <bean id="whitelistsSteps" class="ae.pegasus.framework.steps.APIWhitelistSteps">
+    </bean>
+    <bean id="tagSteps" class="ae.pegasus.framework.steps.APITagSteps">
+    </bean>
+    <bean id="permissionSteps" class="ae.pegasus.framework.steps.APIPermissionManagementSteps">
+    </bean>
+    <bean id="teamSteps" class="ae.pegasus.framework.steps.APITeamManagementSteps">
+    </bean>
+    <bean id="organizationSteps" class="ae.pegasus.framework.steps.APIOrganizationSteps">
+    </bean>
+    <bean id="dictionariesSteps" class="ae.pegasus.framework.steps.APIDictionariesSteps">
+    </bean>
+    <bean id="savedSearchSteps" class="ae.pegasus.framework.steps.APISavedSearchSteps">
+    </bean>
+    <bean id="finderFileSteps" class="ae.pegasus.framework.steps.APIFinderFileSteps">
+    </bean>
+    <bean id="RequestForInformationSteps" class="ae.pegasus.framework.steps.APIRequestForInformationSteps">
+    </bean>
+    <bean id="RequestForApproveSteps" class="ae.pegasus.framework.steps.APIRequestForApproveSteps">
+    </bean>
+    <bean id="MasterReportSteps" class="ae.pegasus.framework.steps.APIMasterReportSteps">
+    </bean>
+</beans>

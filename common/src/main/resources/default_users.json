@@ -1,0 +1,10 @@
+{"entities":
+        [
+          {"displayName":"Root", "name":"root", "password":"123456", "roles":["ROOT"]},
+          {"displayName":"Admin", "name":"admin@pegasus.ae", "password":"123456", "roles":["ADMIN"]},
+          {"displayName":"Tasker", "name":"tasker", "password":"123456", "roles":["TASKER"]},
+          {"displayName":"Analyst", "name":"analyst", "password":"123456", "roles":["ANALYST"]},
+          {"displayName":"Approver", "name":"approver", "password":"123456", "roles":["APPROVER"]},
+          {"displayName":"Operator", "name":"operator", "password":"123456", "roles":["OPERATOR"]}
+        ]
+}

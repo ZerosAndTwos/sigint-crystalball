@@ -1,0 +1,73 @@
+{
+  "name": "Launchpad McQuack",
+  "properties": {
+    "description": "A lovable doofus, Launchpad McQuack may seem absent-minded, yet despite often making mistakes, he always gets his assigned task done competently in the end and as such, he is a valuable helper for Scrooge McDuck, despite often irritating Scrooge with his ignorance. He is a gentle giant, and also very charming and witty. Additionally, Launchpad remains calm and positive in extreme and intense scenarios, never panicking or losing his cool. In fact, the only thing that comes close to scaring Launchpad are Scrooge's temper tantrums. He gets on with Huey, Dewey, Louie, and Webby very well, and is fiercely protective of them. In fact, if the duckling quartet are endangered, he employs his finest piloting skills towards rescuing them. He is also very popular with the ladies."
+  },
+  "groups": [],
+  "identifiers": [
+    {
+      "name": "LaunchpadMcQuack@gmail.com",
+      "properties": {},
+      "type": "EMAIL_ADDRESS",
+      "value": "LaunchpadMcQuack@gmail.com",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    },
+    {
+      "name": "375292223322",
+      "properties": {},
+      "type": "PHONE_NUMBER",
+      "value": "375293332233",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    },
+    {
+      "name": "12345666777888",
+      "properties": {},
+      "type": "IMEI",
+      "value": "12345666777888",
+      "sources": ["H"],
+      "validationStatus": "NOT_APPLICABLE",
+      "jsonType": "Identifier"
+    },
+    {
+      "name": "34345556667770",
+      "properties": {},
+      "type": "IMSI",
+      "value": "34345556667770",
+      "sources": ["H"],
+      "validationStatus": "VALID",
+      "jsonType": "Identifier"
+    }
+  ],
+  "consolidatedAttributes": {
+    "image": [],
+    "gender": [],
+    "nationality": [],
+    "document": [],
+    "name": [],
+    "dateOfBirth": []
+  },
+  "active": "ACTIVE",
+  "activeUntil": null,
+  "entityCount": 0,
+  "category": "Person of Interest",
+  "threatLikelihood": 20,
+  "threatImpact": 20,
+  "criminalRecord": "CLEAN",
+  "reqPermissions":[{"actionPermission":null,"classification":"TS","dataSources":null,"orgUnit":null}],
+  "rfis": null,
+  "voiceModelId": null,
+  "voiceFiles": [],
+  "uploadedImage": null,
+  "target": true,
+  "historicalQueryTime": null,
+  "lastLocation": null,
+  "voiceID": false,
+  "threatScore": 40,
+  "jsonType": "Profile",
+  "images": [],
+  "type": "Individual"
+}

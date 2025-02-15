@@ -1,0 +1,20 @@
+.idea
+.allure
+build/
+log4j
+*.iml
+target
+.DS_Store
+/htmlEmail
+htmlEmail.html
+*.csv
+*.xls
+*.CF
+*.NC
+
+# generated files
+ingestionData
+importData
+importTargetsData
+maven_dependencies
+/allure-results/
