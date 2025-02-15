@@ -1,6 +1,4 @@
-Below is the complete Markdown conversion of your HTML, with every piece of data preserved:
 
----
 
 # Technical Analysis: Advanced Mobile Surveillance Infrastructure
 
